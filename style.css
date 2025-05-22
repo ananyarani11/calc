@@ -1,45 +1,49 @@
 @import url('https://fonts.google.com/share?selection.family=Roboto+Slab:wght@100..900');
 *{
-    margin:0;
+    margin:2px;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Popins',sans-serif;
+    font-family: 'Popins',sans-serif ;
+    font-weight: bold;
+    
 }
 body
 {
+    border:  1px solid black;
     width: 100%;
     height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #0a0a0a,  #3a4452);
+    background: linear-gradient(50deg, #96d5ef,  #5b99ef);
 }
 .calculator
 {
-    border: 1px solid #717377;
+    border:  1px solid black;
+    border: 1px solid #666769;
     padding:20px;
     border-radius: 16px;
-    background:transparent;
+    background: #bff2d0 ;
     box-shadow: 0px 3px 15px rgba(113,115,119,0.5);
 }
 input
 {
     width: 320px;
-    border: none;
+    border: 3px solid black;
     padding: 24px;
     margin: 10px;
     background: transparent;
-    box-shadow: 0px 3px 15px rgbs(84,84,84,0.1);
-    font-size: 40px;
+    box-shadow: 0px 3px 8px rgb(135, 133, 133);
+    font-size: 35px;
     text-align: right;
     cursor: pointer; 
 }
 input::placeholder{
-    color:#ffffff;
+    color:#fffefe;
 
 }
 button{
-    border: none;
+    border: 2px solid white;
     width: 60px;
     height: 60px;
     margin: 10px;
@@ -48,12 +52,14 @@ button{
     color:#ffffff;
     font-size: 20px;
     box-shadow: -8px,-8px 15px rgba(255,255,255,0.1);
-    cursor: pointer;  
+    cursor: pointer; 
+    grid-column: span 4;
+  background-color: #e9a1a1; 
 
 }
 .equalBtn{
-    background-color: #fb7c14;
+    background-color: #0d0e0e;
 }
 .operator{
-    color:aqua;
+    color:#E53888;
 }
